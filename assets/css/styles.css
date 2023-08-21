@@ -1,0 +1,972 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: rgb(255, 255, 255);
+  --black-color: rgb(0, 0, 0);
+  --green-color: rgb(21, 30, 38);
+  --white-nav-color: rgba(255, 255, 255, 0.327);
+  --brown-color: rgb(89, 55, 42);
+  --off-white-color: rgb(242, 242, 242);
+}
+
+/* utility classes start */
+.d-flex {
+  display: flex;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.section-margin {
+  margin: 1.5rem 0 0 0;
+}
+
+/* utility classes end */
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--black-color);
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* btn classes start*/
+
+.btn {
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	background-color: transparent;
+	padding: .8rem 1.5rem;
+	border-radius: 1.5rem;
+	border: none;
+}
+/* btn classes end*/
+
+/*header start*/
+
+/* nav start */
+
+nav {
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+
+  padding: .25rem 4rem;
+  width: 100%;
+
+  position: fixed;
+  z-index: 1000;
+
+  background-color: var(--white-color);
+}
+
+.logo a{
+  font-size: 1rem!important;
+  font-weight: 700;
+
+  flex-direction: column;
+  margin: calc((76px - 24px) / 2) 0;
+}
+
+ul {
+	flex-direction: row;
+	align-items: center;
+	column-gap: 3rem;
+
+	list-style: none;
+
+	font-size: .8rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.green-btn {
+  background-color: var(--green-color);
+  color: var(--off-white-color);
+
+  margin: calc((76px - 44px) / 2) 0;
+}
+
+/* nav end */
+
+header img {
+  height: 80vh;
+  width: 100%;
+  margin: 5.1rem 0 0;
+
+  overflow: hidden;
+
+  object-fit: cover;
+}
+
+/* header-section start */
+
+#header-section {
+  background-color: rgba(21, 30, 38, 0.2);
+  background-size: cover;
+  height: 80vh;
+
+  position: absolute;
+  top: 5.1rem;
+}
+
+.header-section-content {
+  margin: 20%  0 0 0!important;
+  padding: 0rem 21rem!important;
+
+  text-align: center;
+}
+
+.header-section-content h1,.header-section-content p {
+  color: var(--off-white-color);
+}
+
+/* header-section end */
+
+/* header end */
+
+/* main starts */
+
+/* section-1 starts*/
+
+.section-1-text h4, .section-1-text h1 {
+  text-align: center;
+}
+
+.section-1-text h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.info-cards {
+  justify-content: space-evenly;
+  column-gap: 3rem;
+
+  margin: 1rem 1rem 5rem;
+}
+
+.card {
+  width: 20rem;
+
+  text-align: center;
+}
+
+.card span {
+  display: block;
+
+  height: 8rem;
+  width: auto;
+}
+
+.card span img {
+  object-fit: contain;
+
+  height: 100%;
+  width: 100%;
+}
+
+.card p {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+/* section-1 ends*/
+
+/* section-2 starts*/
+
+#section-2 {
+  background-color: var(--green-color);
+  color: var(--off-white-color);
+
+  padding: 2rem 0 4rem;
+}
+
+.texts {
+  justify-content: space-evenly;
+
+  margin: 0 5rem;
+}
+
+#section-2 h1 {
+  text-align: center;
+
+  padding: 1rem;
+}
+
+.text h3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+
+.circle {
+  width: .5rem;
+  height: .5rem;
+  margin: calc((120px - 8px) / 2);
+
+  border-radius: 50%;
+  background-color: var(--off-white-color);
+}
+
+/* section-2 ends*/
+
+/* section-3 starts*/
+
+#section-3 {
+  height: fit-content;
+}
+
+.text-content{
+  width: 45%;
+  padding: 1rem;
+
+  text-align: left;
+}
+
+.text-content h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+
+  margin: 1rem 0 ;
+}
+
+.section-3-img {
+  height: 30rem;
+  width: 55%;
+
+  background-image: url('../img/growth.jpg');
+  background-size: cover;
+}
+
+/* section-3 ends*/
+
+/* section-4 starts*/
+
+#section-4 {
+  background-color: var(--green-color);
+  color: var(--off-white-color);
+
+  padding: 1rem;
+}
+
+#section-4 > h1:first-child{
+  text-align: center;
+
+  padding: 2rem 0 0;
+}
+
+.clients {
+  justify-content: space-evenly!important;
+
+  padding: 2rem 0 2rem;
+}
+
+.clients h1 {
+  font-size: 3rem;
+}
+
+.clients h1:nth-child(1) {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.clients h1:nth-child(2) {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.clients h1:nth-child(3) {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.clients h1:nth-child(4) {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.clients h1:nth-child(5) {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* section-4 ends*/
+
+/* section-5 starts */
+
+#section-5 {
+  height: fit-content;
+  padding: 1rem;
+}
+
+#section-5 > div:nth-child(1) {
+  width: 45%;
+}
+
+form {
+  display: grid;
+  grid-template-rows: repeat(7, 5rem);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+
+  width: 55%;
+  padding: 1rem;
+}
+
+form input {
+  padding: .4rem;
+  width: 20rem;
+  
+  border-radius: 0.25rem;
+  border: 1px solid rgb(198, 198, 198);
+  background: var(--white, rgb(255, 255, 255));
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.eight, .nine {
+  width: 15rem;
+}
+
+.couns {
+  display: none;
+}
+
+.submit-btn-div {
+  grid-row: 6/7;
+  grid-column: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
+/* section-5 ends */
+
+/* .googlemap {
+  overflow: hidden;
+} */
+/* main ends */
+
+@media (max-width: 1024px) {
+  /* Adjustments for mobile to laptop screens */
+
+  body {
+    width: 115vw;
+  }
+
+  h1 {
+  font-size: 1.5rem!important;
+  }
+
+  /* Header adjustments */
+  nav {
+    padding: .25rem 4rem!important;
+
+    justify-content: space-between!important;
+  }
+
+  .logo a {
+    font-size: 1.3rem;
+    margin: calc((76px - 24px) / 2) 0;
+  }
+
+  ul {
+    column-gap: 3rem!important;
+  }
+
+  ul.menu-list,
+  .nav-btn {
+    display: flex!important;
+  }
+
+  /* Header section adjustments */
+  #header-section {
+    top: 5.1rem!important;
+    width: 115vw;
+    height: 80vh!important;
+  }
+
+  .header-section-content {
+    margin: 17%  0 0 0!important;
+    padding: 0rem 21rem!important;
+  }
+
+  /* Main content adjustments */
+  .section-margin {
+    margin: 1rem 0;
+  }
+
+  /* Section 1 adjustments */
+  .section-1-text h4 {
+  font-size: 1rem!important;
+  font-weight: 400!important;
+  }
+
+  .card {
+    width: 100%;
+  }
+  
+
+  /* Section 2 adjustments */
+  .texts {
+    margin: 0 2rem;
+  }
+
+  .text h3 {
+  font-size: 4rem!important;
+  }
+
+  /* Section 3 adjustments */
+  .text-content,
+  .section-3-img {
+    width: 100%;
+  }
+
+  .text-content {
+    width: 45%!important;
+    text-align: left!important;
+  }
+
+  .text-content h3 {
+    font-size: 2.5rem!important;
+    font-weight: 500!important;
+  }
+
+  .section-3-img {
+    height: 30rem!important;
+    width: 55%!important;
+  }
+
+
+  /* Section 4 adjustments */
+
+  .clients {
+    justify-content: space-evenly!important;
+  }
+
+  .clients h1 {
+    font-size: 3rem!important;
+  }
+
+  /* Section 5 adjustments */
+  #section-5 {
+    display: flex;
+    flex-direction: row!important;
+  }
+
+  #section-5:nth-child(1){
+   width: 45%!important;
+  }
+
+  form {
+    grid-template-rows: repeat(7, 5rem);
+    flex-basis: 55%;
+    width: 100%;
+    padding: 1rem!important;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  .eight,
+  .nine {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjustments for tablet screens */
+
+  body {
+    width: 120vw;
+  }
+
+  /* nav adjustments */
+  nav {
+    justify-content: center!important;
+  }
+
+  /* Hide navigation menu and call-to-action button */
+  ul.menu-list,
+  .nav-btn {
+    display: none!important;
+  }
+
+/* logo adjustments */
+  .logo a {
+    font-size: 1rem;
+  }
+
+  /* Header section adjustments */
+  #header-section {
+    height: 60vh;
+    top: 3.1rem;
+    width: 120vw;
+  }
+
+  .header-section-content {
+    margin: 22% 0 0!important;
+    padding: 0 13rem!important;
+  }
+
+  /* Main content adjustments */
+  .section-margin {
+    margin: 1rem 0;
+  }
+
+  /* Section 1 adjustments */
+  .card {
+    width: 100%;
+  }
+
+  /* Section 2 adjustments */
+  .texts {
+    margin: 0 2rem;
+  }
+
+  .text h3 {
+    font-size: 3rem;
+  }
+
+  /* Section 3 adjustments */
+  .text-content,
+  .section-3-img {
+    width: 100%!important;
+    height: auto;
+  }
+
+  /* Section 4 adjustments */
+
+  .clients h1 {
+    font-size: 2rem!important;
+  }
+
+  /* Section 5 adjustments */
+  
+  #section-5 {
+    flex-direction: column!important;
+  }
+
+  #section-5:nth-child(1) {
+    width: 100%;
+  }
+
+  #section-5 > div {
+    text-align: center!important;
+  }
+
+  form {
+    grid-template-rows: repeat(7, 5rem);
+    width: fit-content;
+    margin: 0;
+    padding: 0 calc((883px - 656px) / 2)!important ;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  .eight,
+  .nine {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  /* Adjustments for screens between 425px and 767px */
+
+  /* Adjustments for tablet screens */
+  body {
+    width: 216vw;
+  }
+
+  /* nav adjustments */
+  nav {
+    justify-content: center!important;
+  }
+
+  /* Hide navigation menu and call-to-action button */
+  ul.menu-list,
+  .nav-btn {
+    display: none!important;
+  }
+
+  /* logo adjustments */
+  .logo a {
+    font-size: 1rem;
+  }
+
+  /* Header section adjustments */
+  #header-section {
+    height: 60vh;
+    top: 3.1rem;
+    width: 216vw;
+  }
+
+  .header-section-content {
+    margin: 22.2% 0 0!important;
+    padding: 0 14rem!important;
+  }
+
+  /* Main content adjustments */
+  .section-margin {
+    margin: 1rem 0;
+  }
+
+  /* Section 1 adjustments */
+  .card {
+    width: 100%;
+  }
+
+  /* Section 2 adjustments */
+  .texts {
+    margin: 0 2rem;
+  }
+
+  .text h3 {
+    font-size: 3rem;
+  }
+
+  /* Section 3 adjustments */
+  .text-content,
+  .section-3-img {
+    width: 100%!important;
+    height: auto;
+  }
+
+  /* Section 4 adjustments */
+  .clients h1 {
+    font-size: 2rem!important;
+  }
+
+  /* Section 5 adjustments */
+  #section-5 {
+    flex-direction: column!important;
+  }
+
+  #section-5:nth-child(1) {
+    width: 100%;
+  }
+
+  #section-5 > div {
+    text-align: center!important;
+  }
+
+  form {
+    grid-template-rows: repeat(7, 5rem);
+    width: fit-content;
+    margin: 0;
+    padding: 0 calc((883px - 656px) / 2)!important ;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  .eight,
+  .nine {
+    width: 100%;
+  }
+}
+
+@media (max-width: 424px) and (min-width: 325px) {
+  /* Adjustments for screens between 325px and 424px */
+  body {
+    width: 280vw;
+  }
+
+  p {
+    font-size: 1.4rem!important;
+  }
+
+  /* nav adjustments */
+  nav {
+    justify-content: center!important;
+  }
+
+  /* Hide navigation menu and call-to-action button */
+  ul.menu-list,
+  .nav-btn {
+    display: none!important;
+  }
+
+  /* logo adjustments */
+  .logo a {
+    font-size: 2rem;
+  }
+
+  /* Header section adjustments */
+  #header-section {
+    height: 80vh;
+    top: 3.1rem;
+    width: 280vw;
+  }
+
+  .header-section-content {
+    margin: 20% 0 0!important;
+    padding: 0 13rem!important;
+  }
+
+  .header-section-content h1 {
+    font-size: 2rem!important;
+  }
+
+  .header-section-content p {
+    display: none!important;
+  }
+
+  /* Main content adjustments */
+  .section-margin {
+    margin: 1rem 0;
+  }
+
+  /* Section 1 adjustments */
+  .section-1-text h4 {
+    font-size: 1.8rem!important ;
+  }
+
+  .section-1-text h1 {
+    font-size: 1.6rem!important ;
+  }
+
+  .info-cards {
+    align-items: center;
+    row-gap: 2rem;
+
+    margin: 0 5rem;
+    padding: 2rem 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card h4 {
+    font-size: 1.8rem!important;
+  }
+
+  .card p {
+    font-size: 1.5rem!important;
+    display: none!important;
+  }
+
+  /* Section 2 adjustments */
+
+  #section-2 h1 {
+    font-size: 2rem!important;
+  }
+  
+  .texts {
+    margin: 0 2rem;
+  }
+
+  .text h3 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    text-align: center;
+  }
+
+  /* Section 3 adjustments */
+  .text-content,
+  .section-3-img {
+    width: 100%!important;
+    height: auto!important;
+  }
+
+  /* Section 4 adjustments */
+  .clients h1 {
+    font-size: 2rem!important;
+  }
+
+  /* Section 5 adjustments */
+  #section-5 {
+    flex-direction: column!important;
+  }
+
+  #section-5:nth-child(1) {
+    width: 100%;
+  }
+
+  #section-5 > div {
+    text-align: center!important;
+  }
+
+  form {
+    grid-template-rows: repeat(7, 5rem);
+    width: fit-content;
+    margin: 0;
+    padding: 0 10rem!important ;
+    font-size: 1.3rem;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  .eight,
+  .nine {
+    width: 100%;
+  }
+}
+
+@media (max-width: 324px) and (min-width: 320px) {
+  /* Adjustments for screens between 325px and 424px */
+  body {
+    width: 305vw;
+  }
+
+  p {
+    font-size: 1.4rem!important;
+  }
+
+  /* nav adjustments */
+  nav {
+    justify-content: center!important;
+  }
+
+  /* Hide navigation menu and call-to-action button */
+  ul.menu-list,
+  .nav-btn {
+    display: none!important;
+  }
+
+  /* logo adjustments */
+  .logo a {
+    font-size: 2rem;
+  }
+
+  /* Header section adjustments */
+  #header-section {
+    height: 80vh;
+    top: 3.1rem;
+    width: 305vw;
+  }
+
+  .header-section-content {
+    margin: 22% 0 0!important;
+    padding: 0 13rem!important;
+  }
+
+  .header-section-content h1 {
+    font-size: 2rem!important;
+  }
+
+  .header-section-content p {
+    display: none!important;
+  }
+
+  /* Main content adjustments */
+  .section-margin {
+    margin: 1rem 0;
+  }
+
+  /* Section 1 adjustments */
+  .section-1-text h4 {
+    font-size: 1.8rem!important;
+  }
+
+  .section-1-text h1 {
+    font-size: 1.6rem!important;
+  }
+
+  .info-cards {
+    align-items: center;
+    row-gap: 2rem;
+
+    margin: 0 5rem;
+    padding: 2rem 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card h4 {
+    font-size: 1.8rem!important;
+  }
+
+  .card p {
+    font-size: 1.5rem!important;
+    display: none!important;
+  }
+
+  /* Section 2 adjustments */
+  #section-2 h1 {
+    font-size: 2rem!important;
+  }
+  
+  .texts {
+    margin: 0 2rem;
+  }
+
+  .text h3 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    text-align: center;
+  }
+
+  /* Section 3 adjustments */
+  .text-content,
+  .section-3-img {
+    width: 100%!important;
+    height: auto!important;
+  }
+
+  /* Section 4 adjustments */
+  .clients h1 {
+    font-size: 2rem!important;
+  }
+
+  /* Section 5 adjustments */
+  #section-5 {
+    flex-direction: column!important;
+  }
+
+  #section-5:nth-child(1) {
+    width: 100%;
+  }
+
+  #section-5 > div {
+    text-align: center!important;
+  }
+
+  form {
+    grid-template-rows: repeat(7, 5rem);
+    width: fit-content;
+    margin: 0;
+    padding: 0 8rem!important ;
+    font-size: 1.3rem;
+
+    row-gap: 1rem;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  .eight,
+  .nine {
+    width: 100%;
+  }
+}
